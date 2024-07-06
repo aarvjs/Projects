@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+
+}
+:root{
+    --main-bg:#EDEEEF;
+    --white-color:#fffffF;
+    --form-bg:#EDEDED;
+    --dark-blue:#122F59;
+    --light-blue:#4B89C2;
+    --login--btn: #C1D2DB;
+    --input-border:#EDEDED;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-bg);
+}
+
+.signin-container{
+    width: 1100px;
+    height: 100%;
+    background: url("image/course3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    border: 7px solid #fff;
+    box-shadow: 0px 0px 30px #87878774;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbare{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+
+}
+
+.loginlogo{
+    width: 120px;
+}
+
+.nav-right{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-right{
+    list-style-type: none;
+}
+
+.nav-right ul li {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.login-sec{
+    width: 500px;
+    background: var(--form-bg);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.weblogo{
+    max-width: 350px;
+    width: 45%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+from {
+    width: 70%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+from label {
+    width: 100%;
+    columns: var(--dark-blue);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+from input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 9px 12px;
+    font-size: 16px;
+    border: 2px solid var(--input-border);
+    border-radius: 12px;
+    outline: none;
+    background: var(--white-color);
+    cursor: pointer;
+}
+
+from p{
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: end;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+from button{
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    background: var(--dark-blue);
+    color: var(--login--btn);
+    font-weight: 700;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.or{
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.google-btn{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--white-color);
+    border: 2px solid var(--input-border);
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+
+.google-btn img{
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+}
+
+.signup{
+    color: var(--dark-blue);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.signup a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--light-blue);
+    cursor: pointer;
+}
+
+@media(max-width:1000px) {
+    .login-sec{
+        width: 100%;
+    }
+    .signin-container {
+        max-width: 600;
+        width: 100%;
+    }
+}
